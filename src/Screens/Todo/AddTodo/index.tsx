@@ -7,7 +7,7 @@ interface Props {}
 
 const AddTodo = ({ }: Props) => {
     const [showInput, setShowInput] = useState<boolean>(false);
-    return (
+    return  (
         <>
             <AddButton onPress={() => setShowInput(true)} />
             {showInput && <TodoInput hideTodoInput={() => setShowInput(false)}

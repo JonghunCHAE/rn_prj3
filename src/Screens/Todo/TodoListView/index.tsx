@@ -16,7 +16,7 @@ const TodoListView = ({ }: Props) => {
             <Header />
             <TodoList />
         </Container>
-    )
-}
+    );
+};
 
 export default TodoListView;

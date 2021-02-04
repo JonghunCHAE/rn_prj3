@@ -17,7 +17,7 @@ interface Props {}
 const Header = ({ }: Props) => {
     return (
         <Container>
-            <TitleLabel>할 일 목록 어플리케이션</TitleLabel>
+            <TitleLabel>할 일을 적어두세요!</TitleLabel>
         </Container>
     );
 };

@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Styled from 'styled-components/native';
 
-import { TodoListContext, TodoListContextProvider } from '~/Context/TodoListContext';
+import { TodoListContext } from '~/Context/TodoListContext';
 
-const Input = Styled.TextInput`
+const Input  = Styled.TextInput`
     width: 100%;
     height: 40px;
     background-color: #FFF;
@@ -21,9 +21,9 @@ const TextInput = ({ hideTodoInput }: Props) => {
             autoFocus={true}
             autoCapitalize="none"
             autoCorrect={false}
-            placeholder="할 일을 입력하세요."
+            placeholder="할 일을 입력해주세요."
             returnKeyType="done"
-            onSubmitEdting={({ nativeEvent }) => {
+            onSubmitEditing={({ nativeEvent }) => {
                 addTodoList(nativeEvent.text);
                 hideTodoInput();
             }}

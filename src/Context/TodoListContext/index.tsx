@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
 interface Props {
@@ -30,7 +30,7 @@ const TodoListContextProvider = ({ children }: Props) => {
     const initData = async () => {
         try {
             const list = await AsyncStorage.getItem('todoList');
-            if(list !== null){
+            if (list !== null) {
                 setTodoList(JSON.parse(list));
             }
         } catch (e) {

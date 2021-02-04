@@ -15,7 +15,6 @@ const Label = Styled.Text`
 `;
 
 const DeleteButton = Styled.TouchableOpacity``;
-
 const Icon = Styled.Image`
     width: 24px;
     height: 24px;

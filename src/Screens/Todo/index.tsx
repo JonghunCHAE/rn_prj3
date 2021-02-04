@@ -3,7 +3,6 @@ import Styled from 'styled-components/native';
 
 import TodoListView from './TodoListView';
 import AddTodo from './AddTodo';
-import { TodoListContextProvider } from '~/Context/TodoListContext';
 
 const Container = Styled.View`
     flex: 1;
